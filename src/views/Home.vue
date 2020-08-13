@@ -1,17 +1,28 @@
+<!--
+  功能: Home
+  作者: gyh
+  版本: v0.1
+-->
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <div class="m-hello">hello world</div>
-    <hello-world />
-    <div class="element">hello world3</div>
+  <div class="app-container">
+    page
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 export default {
-  name: 'Home',
-  components: { HelloWorld }
+  name: '',
+  components: {},
+  props: {},
+  data() {
+    return {}
+  },
+  computed: {},
+  watch: {},
+  created() {},
+  mounted() {},
+  methods: {}
 }
 </script>
+
+<style scoped lang="scss" type="text/css"></style>
