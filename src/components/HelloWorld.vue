@@ -5,7 +5,7 @@
 -->
 <template>
   <div class="app-container">
-    hello world2
+    hello world
   </div>
 </template>
 
@@ -25,10 +25,4 @@ export default {
 }
 </script>
 
-<style scoped lang="scss" type="text/css">
-.app-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-</style>
+<style scoped lang="scss" type="text/css"></style>
