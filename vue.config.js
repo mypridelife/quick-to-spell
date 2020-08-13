@@ -22,7 +22,6 @@ module.exports = {
         // 这里的选项会传递给 postcss-loader
         plugins: [
           require('postcss-import')({}),
-          require('postcss-write-svg')({ utf8: false }),
           require('postcss-px-to-viewport')({
             viewportWidth: 750, // (Number) The width of the viewport.
             viewportHeight: 1334, // (Number) The height of the viewport.
