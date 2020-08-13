@@ -55,8 +55,6 @@ Css 方案：Sass
 
 ✅ postcss-import: VW 适配方案核心插件
 
-✅ postcss-write-svg: 移动端 1px 解决方案
-
 ✅ [viewport-units-buggyfill](https://github.com/rodneyrehm/viewport-units-buggyfill): 移动端 VW 适配 buggyfill
 
 > This is a buggyfill (fixing bad behavior), not a polyfill (adding missing behavior).
