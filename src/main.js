@@ -6,6 +6,11 @@ import '@/styles/index.scss'
 
 Vue.config.productionTip = false
 
+var hacks = require('viewport-units-buggyfill/viewport-units-buggyfill.hacks')
+require('viewport-units-buggyfill').init({
+  hacks: hacks
+})
+
 new Vue({
   router,
   store,

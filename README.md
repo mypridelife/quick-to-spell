@@ -49,9 +49,24 @@ Css 方案：Sass
 
 ✅ postcss-import: 解决 css 引入问题
 
+✅ vant: 组件库
+
+移动端适配：
+
 ✅ postcss-import: VW 适配方案核心插件
 
-✅ vant: 组件库
+✅ postcss-write-svg: 移动端 1px 解决方案
+
+✅ [viewport-units-buggyfill](https://github.com/rodneyrehm/viewport-units-buggyfill): 移动端 VW 适配 buggyfill
+
+> This is a buggyfill (fixing bad behavior), not a polyfill (adding missing behavior).
+
+✅ postcss-viewport-units: 服务`viewport-units-buggyfill`。自动为 `viewport-units-buggyfill`添加 `content`属性
+
+### 开发准备
+
+- 增加.eslintrc 和.prettierrc 配置文件。
+  vscode 同时设置 lint on save 和 format on save 方便开发。
 
 ## Start
 

@@ -1,6 +1,5 @@
 'use strict'
 
-const name = process.env.npm_package_name // page title
 const port = 4399 // dev port
 
 module.exports = {
@@ -23,7 +22,7 @@ module.exports = {
         // 这里的选项会传递给 postcss-loader
         plugins: [
           require('postcss-import')({}),
-          //   require('postcss-write-svg')({ utf8: false }),
+          require('postcss-write-svg')({ utf8: false }),
           require('postcss-px-to-viewport')({
             viewportWidth: 750, // (Number) The width of the viewport.
             viewportHeight: 1334, // (Number) The height of the viewport.
@@ -32,16 +31,11 @@ module.exports = {
             selectorBlackList: ['.ignore', '.hairlines', 'van'], // (Array) The selectors to ignore and leave as px.
             minPixelValue: 1, // (Number) Set the minimum pixel value to replace.
             mediaQuery: false // (Boolean) Allow px to be converted in media queries.
-          }),
-          require('autoprefixer')
-          //   require('postcss-viewport-units')({}),
+          }) /* px-to-viewport-ignore-next */ /* px-to-viewport-ignore */,
+          require('autoprefixer'),
+          require('postcss-viewport-units')({})
         ]
       }
     }
-  },
-  configureWebpack: {
-    // provide the app's title in webpack's name field, so that
-    // it can be accessed in index.html to inject the correct title.
-    name: name
   }
 }
