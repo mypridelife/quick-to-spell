@@ -51,6 +51,8 @@ Css 方案：Sass
 
 ✅ vant: 组件库
 
+✅ husky @commitlint/config-conventional @commitlint/cli: git 提交规范
+
 移动端适配：
 
 ✅ postcss-import: VW 适配方案核心插件
@@ -61,7 +63,6 @@ Css 方案：Sass
 
 ✅ postcss-viewport-units: 服务`viewport-units-buggyfill`。自动为 `viewport-units-buggyfill`添加 `content`属性
 
-✅ husky @commitlint/config-conventional @commitlint/cli: git 提交规范
 
 ### 开发准备
 
