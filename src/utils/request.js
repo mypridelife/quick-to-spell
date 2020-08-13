@@ -2,6 +2,7 @@
  * 无token版本
  */
 import axios from 'axios'
+import { Toast } from 'vant';
 
 // create an axios instance
 const service = axios.create({
