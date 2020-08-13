@@ -15,15 +15,3 @@ export default {
   components: { HelloWorld }
 }
 </script>
-
-<style scoped lang="scss" type="text/css">
-.m-hello {
-  font-size: 32px;
-}
-.element {
-  width: 400px;
-  height: 400px;
-  /* rebasing path by new destination */
-  background: url('../assets/logo.png');
-}
-</style>
