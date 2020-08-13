@@ -49,17 +49,5 @@
   ],
   "jest": {
     "preset": "@vue/cli-plugin-unit-jest"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint",
-      "pre-push": "npm run test:unit"
-    }
-  },
-  "lint-staged": {
-    "*.{js,vue}": [
-      "vue-cli-service lint",
-      "git add"
-    ]
   }
 }
