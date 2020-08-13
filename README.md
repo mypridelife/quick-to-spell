@@ -63,7 +63,6 @@ Css 方案：Sass
 
 ✅ postcss-viewport-units: 服务`viewport-units-buggyfill`。自动为 `viewport-units-buggyfill`添加 `content`属性
 
-
 ### 开发准备
 
 - 增加.eslintrc 和.prettierrc 配置文件。
@@ -86,6 +85,8 @@ npm run serve
 ```
 npm run build
 ```
+
+![build]("build.png")
 
 ### Test
 
