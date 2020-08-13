@@ -86,7 +86,7 @@ npm run serve
 npm run build
 ```
 
-![build]("build.png")
+![build](build.png)
 
 ### Test
 
