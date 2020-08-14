@@ -53,6 +53,8 @@ Css 方案：Sass
 
 ✅ husky @commitlint/config-conventional @commitlint/cli: git 提交规范
 
+✅ dayjs: 日期处理
+
 移动端适配：
 
 ✅ postcss-import: VW 适配方案核心插件
@@ -62,7 +64,6 @@ Css 方案：Sass
 > This is a buggyfill (fixing bad behavior), not a polyfill (adding missing behavior).
 
 ✅ postcss-viewport-units: 服务`viewport-units-buggyfill`。自动为 `viewport-units-buggyfill`添加 `content`属性
-
 
 ### 开发准备
 
