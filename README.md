@@ -55,6 +55,8 @@ Css 方案：Sass
 
 ✅ dayjs: 日期处理
 
+✅ babel-plugin-transform-remove-console: 移除 log 代码
+
 移动端适配：
 
 ✅ postcss-import: VW 适配方案核心插件
