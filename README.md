@@ -53,6 +53,8 @@ Css 方案：Sass
 
 ✅ husky @commitlint/config-conventional @commitlint/cli: git 提交规范
 
+✅ dayjs: 日期处理
+
 移动端适配：
 
 ✅ postcss-import: VW 适配方案核心插件
