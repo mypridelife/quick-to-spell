@@ -5,23 +5,54 @@
 -->
 <template>
   <div class="app-container">
-    page
+    <div>count:{{ count }}</div>
+    <div>name:{{ name }}sex:{{ sex }}</div>
+    <button @click="handlePlusOne">Add</button>
   </div>
 </template>
 
 <script>
+import { mapState, mapGetters } from 'vuex'
 export default {
-  name: '',
+  name: 'About',
   components: {},
   props: {},
   data() {
     return {}
   },
-  computed: {},
+  computed: {
+    // count() {
+    //   return this.$store.state.about.count
+    // },
+    // name() {
+    //   return this.$store.state.about.person.name
+    // },
+    // sex() {
+    //   return this.$store.state.about.person.sex
+    // },
+    ...mapState({
+      name: state => state.about.person.name,
+      sex: state => state.about.person.sex
+    }),
+    ...mapGetters({
+      count: 'count'
+    })
+  },
   watch: {},
   created() {},
   mounted() {},
-  methods: {}
+  methods: {
+    handlePlusOne() {
+      this.$store.commit({
+        type: 'about/plusOne',
+        count: 10
+      })
+      this.$store.commit('about/setPerson', {
+        name: 'flj',
+        sex: '0'
+      })
+    }
+  }
 }
 </script>
 
