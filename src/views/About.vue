@@ -21,15 +21,6 @@ export default {
     return {}
   },
   computed: {
-    // count() {
-    //   return this.$store.state.about.count
-    // },
-    // name() {
-    //   return this.$store.state.about.person.name
-    // },
-    // sex() {
-    //   return this.$store.state.about.person.sex
-    // },
     ...mapState({
       name: state => state.about.person.name,
       sex: state => state.about.person.sex
