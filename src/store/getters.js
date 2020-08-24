@@ -1,4 +1,4 @@
 const getters = {
-  count: state => state.about.count
+  app_theme: state => state.app.theme
 }
 export default getters

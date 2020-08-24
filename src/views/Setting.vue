@@ -1,13 +1,11 @@
 <!--
-  功能: Home
+  功能: 设置
   作者: gyh
-  版本: v0.1
+  版本: v1.0.0
 -->
 <template>
   <div class="app-container">
-    <div v-for="index in 100" :key="index">
-      {{ index }}
-    </div>
+    page
   </div>
 </template>
 
@@ -17,9 +15,7 @@ export default {
   components: {},
   props: {},
   data() {
-    return {
-      active: 'home'
-    }
+    return {}
   },
   computed: {},
   watch: {},
