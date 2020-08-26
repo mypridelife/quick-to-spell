@@ -17,6 +17,7 @@ module.exports = {
     }
   },
   css: {
+    //   const viewportWidth = file.dirname.includes(path.join('node_modules', 'vant')) ? 375 : 750;
     loaderOptions: {
       postcss: {
         // 这里的选项会传递给 postcss-loader
