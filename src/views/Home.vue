@@ -119,10 +119,6 @@ export default {
         font-size: 64px;
       }
     }
-    .m-input-world {
-      .u-input-world {
-      }
-    }
     .m-tip {
       position: absolute;
       bottom: 200px;
