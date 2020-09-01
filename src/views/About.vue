@@ -5,23 +5,34 @@
 -->
 <template>
   <div class="app-container">
-    page
+    <input type="text" v-model="debounceText" @keyup="handleInputChange" />
   </div>
 </template>
 
 <script>
+const { debounce } = require('lodash')
+
 export default {
-  name: '',
+  name: 'About',
   components: {},
   props: {},
   data() {
-    return {}
+    return {
+      debounceText: ''
+    }
   },
-  computed: {},
   watch: {},
   created() {},
   mounted() {},
-  methods: {}
+  methods: {
+    handleInputChange: debounce(
+      function() {
+        console.log('you typed :', this.debounceText)
+      },
+      300,
+      { leading: false, trailing: true }
+    )
+  }
 }
 </script>
 

@@ -1,14 +1,22 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
 import Home from '../views/Home.vue'
+import Setting from '../views/Setting.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
+    alias: '/home',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/setting',
+    name: 'Setting',
+    component: Setting
   },
   {
     path: '/about',

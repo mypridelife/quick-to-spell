@@ -33,6 +33,12 @@ FastClick.prototype.focus = function(targetElement) {
   }
 }
 
+import { Tabbar, TabbarItem, Toast } from 'vant'
+
+Vue.use(Toast)
+Vue.use(Tabbar)
+Vue.use(TabbarItem)
+
 new Vue({
   router,
   store,
